@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="634.0" prefWidth="1287.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.db_mysql.controllers.for_users.Table1_Controller">
+    <AnchorPane prefHeight="834.0" prefWidth="1287.0">
+        <Button layoutX="17.0" layoutY="363.0" mnemonicParsing="false" onAction="#add_click" prefHeight="37.0" prefWidth="149.0" text="Добавить" />
+        <Button layoutX="17.0" layoutY="454.0" mnemonicParsing="false" onAction="#delete_click" prefHeight="37.0" prefWidth="149.0" text="Удалить" />
+        <Button layoutX="17.0" layoutY="408.0" mnemonicParsing="false" onAction="#update_click" prefHeight="37.0" prefWidth="149.0" text="Обновить" />
+        <TableView fx:id="tab" layoutX="189.0" layoutY="15.0" prefHeight="598.0" prefWidth="1070.0">
+            <columns>
+                <TableColumn fx:id="ID" prefWidth="72.0" text="ID" />
+                <TableColumn fx:id="Kabina" prefWidth="92.0" text="Кабинет" />
+                <TableColumn fx:id="Invent_nomer" prefWidth="167.0" text="Инвентарный номер" />
+                <TableColumn fx:id="Name" prefWidth="242.0" text="Наименование" />
+                <TableColumn fx:id="Counts" minWidth="0.0" prefWidth="65.0" text="Кол-во" />
+                <TableColumn fx:id="Primich" minWidth="0.0" prefWidth="117.0" text="Примечание" />
+                <TableColumn fx:id="Powers" minWidth="0.0" prefWidth="141.0" text="Характеристики" />
+                <TableColumn fx:id="PI_a" minWidth="0.0" prefWidth="91.0" text="PI адрес" />
+                <TableColumn fx:id="Name_OS" minWidth="0.0" prefWidth="82.0" text="Имя ОС" />
+            </columns>
+        </TableView>
+    </AnchorPane>
+</VBox>
